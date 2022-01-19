@@ -7,9 +7,9 @@ sendgrid.setApiKey(process.env.SENDGRIDAPI);
 const sendwelcome= (emai,name)=>{
         sendgrid.send({
         to:name,
-        from:'brownartistry@outlook.com',// created authentication in sendgrid
+        from:'',// created authentication in sendgrid
         subject:'testing',
-        text:'heloo machaa Welcome'
+        text:'Welcome'
     }).then((s) => {
         console.log(s)
     }).catch((e) => {
