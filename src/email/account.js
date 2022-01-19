@@ -1,5 +1,5 @@
 const sendgrid= require('@sendgrid/mail')
-///const sendgridApiKey='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';
+
 // thsi is set in config.env file
 
 sendgrid.setApiKey(process.env.SENDGRIDAPI);
